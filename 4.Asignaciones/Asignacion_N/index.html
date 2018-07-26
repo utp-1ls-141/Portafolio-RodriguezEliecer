@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
+    <title>Asignacion</title>
+
+</head>
+<body>
+ 
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-inverse" style="background-color:black;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" style="color:white;" href="#">Eliecer Rodriguez 8-911-389</a>
+              </div>  
+            </div>
+        </nav>
+        <!-- Contenedor de todo -->
+        <div class="container-fluid">
+            <!-- Primer Formulario -->
+            <div class="col-sm-6 offset-sm-3 col-md-8 offset-md-2" style="padding-top:5ch">
+                <h3>Concatenación</h3>
+                    <form >
+                        <div class="form-group">
+                            <label for="">Palabra 1:</label>
+                            <input type="text" class="form-control" id="text1" placeholder="introduzca una palabra" name="palabra1">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Palabra 2:</label>
+                            <input type="text" class="form-control"  id="text2" placeholder="introduzca una palabra" name="palabra2">
+                        </div>
+                        <input type="button" class="btn btn-info btn-lg" onclick="concat();" data-toggle="modal" data-target="#myModal" value="Concatenar"/>                
+                    </form>
+            </div>
+            <!-- Segundo Formulario -->
+            <div class="col-sm-6 offset-sm-3 col-md-8 offset-md-2" style="padding-top:5ch">
+                <h3>Matriz Cuadrada "N x N"</h3>
+                    <form >
+                        <div class="form-group">
+                            <label for="">Palabra 1:</label>
+                            <input type="text" class="form-control" id="num" placeholder="introduzca una número" name="palabra1">
+                        </div>
+                        <input type="button" class="btn btn-info btn-lg" onclick="matriz();" data-toggle="modal" data-target="#myModal" value="Mostrar"/>                
+                    </form>
+            </div>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title" style="text-align:center;"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="resp"> hola</div> 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+        </div>
+ <script src="./vendor/jquery/funciones.js"></script>
+ <script src="./vendor/jquery/jquery.js"></script>
+ <script src="./vendor/js/bootstrap.min.js"></script>   
+</body>
+</html>
